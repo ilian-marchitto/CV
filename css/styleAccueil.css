@@ -118,8 +118,9 @@ main {
     display: flex;
     flex-direction: column;
     background-color: var(--couleur-fond-section);
-    margin-top: 5%;
-    padding: 3%;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 4%;
     box-shadow: var(--ombres-section);
 }
 
@@ -136,30 +137,22 @@ main {
     font-size: clamp(16px, 1.5vw, 30px);
 }
 
-.mon-cv, .me-contacter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-    padding: 2%;
-    margin-top: 2.5%;
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: var(--ombres-section);
-    background-color: var(--couleur-fond-section);
-}
-
 .container-cv-contact {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    justify-content: center;
+    gap: 40px;
 }
 
-.mon-cv i {
-    color: #D3202A;
-    font-size: clamp(16px, 3vw, 3vw);
+.mon-cv, .me-contacter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: var(--ombres-section);
+    background-color: var(--couleur-fond-section);
 }
 
 .mon-cv h3, .me-contacter h3 {
@@ -169,12 +162,7 @@ main {
     padding: 10px;
 }
 
-.me-contacter i {
-    color: black;
-    font-size: clamp(16px, 3vw, 3vw);
-}
-
-.me-contacter ul{
+.mon-cv ul, .me-contacter ul{
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -182,8 +170,17 @@ main {
     gap: 40px;
 }
 
+.mon-cv i, .me-contacter i {
+    color: black;
+    font-size: 40px
+}
+
+.mon-cv i {
+    color: #D3202A;
+}
+
 .section-Accueil img{
-    width: 70%;
+    width: 50%;
     height: auto;
 }
 
