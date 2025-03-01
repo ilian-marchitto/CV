@@ -80,7 +80,9 @@ nav ul a {
     color: var(--couleur-texte);
     font-weight: bold;
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
+    padding-top: 1.3vw;
+    padding-bottom: 1.3vw;
     border: 1px solid black;
 }
 
@@ -185,7 +187,7 @@ main {
     height: auto;
 }
 
-@media(max-width: 1550px){
+@media(min-width: 1275px) and (max-width: 1575px) {
     .test {
         position: absolute;
         left: -100%;
@@ -193,7 +195,7 @@ main {
 }
 
 /* 🔹 Mode PC */
-@media(min-width: 1310px) {
+@media(min-width: 1275px) {
     label {
         display: none; /* Cache l’icône hamburger sur PC */
     }
@@ -227,7 +229,8 @@ main {
     nav ul a {
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         font-size: 1.2em;
-        border-radius: 5%;
+        border-radius: 5px;
+        padding: 0.6vw;
     }
     
     h1 {
