@@ -1,0 +1,31 @@
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Définition des variables de couleurs globales */
+:root {
+    --couleur-principale: #6B0D0D;
+    --fond-page: #F5EDE1;
+    --couleur-texte: #2E2E2E;
+    --details-icon: #C4A77D;
+    --couleur-text-bordeaux: #FFD8B7;
+    --couleur-fond-section: #E0E0E0;
+
+    --text-large: 40px;
+    --text-medium: 23px;
+    --text-small: 15px;
+
+    --gap-large: 80px;
+    --gap-medium: 20px; 
+    --gap-small: 13px;
+
+    --nav-pad-width: 15px;
+    --nav-pad-heigh: 8px;
+
+    --ombres-section: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
