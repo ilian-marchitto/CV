@@ -76,11 +76,11 @@ nav ul {
 nav ul a {
     display: flex;
     gap: 20px;
-    font-size: 1.5em;
+    font-size: 16px;
     color: var(--couleur-texte);
     font-weight: bold;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid black;
 }
 
@@ -166,13 +166,14 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding: 10px;;
-    gap: 40px;
+    padding: 10px;
+    gap: 30px;
 }
 
 .mon-cv i, .me-contacter i {
     color: black;
-    font-size: 40px
+    font-size: 40px;
+    min-width: 40px;
 }
 
 .mon-cv i {
