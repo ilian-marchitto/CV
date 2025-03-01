@@ -17,7 +17,7 @@ nav {
 
 h1 {
     color: var(--couleur-text-bordeaux);
-    font-size: 30px;
+    font-size: clamp(20px, 2.5vw, 40px);
     flex-grow: 1;
     text-align: center;
 }
@@ -164,7 +164,7 @@ main {
 
 .mon-cv h3, .me-contacter h3 {
     position: relative;
-    top: 10px;
+    top: 0;
     border: 2px solid var(--couleur-texte);
     padding: 10px;
 }
