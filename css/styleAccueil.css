@@ -3,9 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background: #f8f8f8;
+    color: var(--couleur-texte);
 }
 
-nav {
+nav, header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -189,6 +190,76 @@ main {
     width: auto;
     height: 50%;
 }
+
+/* Section Formations */
+
+.Schema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    margin-top: 60px;
+}
+
+.section-Formations h2 {
+    position: relative;
+    top: 5vh;
+    left: 10vw;
+}
+
+.annees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px
+}
+
+.annees h3 {
+    font-weight: 800;
+    font-size: clamp(15px, 2vw, 25px);
+    padding: 1vw;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.annees .sous-ligne {
+    font-size: clamp(10px, 1vw, 20px);
+    background-color:azure;
+    padding: 2.5px;
+}
+
+.annees .annee {
+    margin-bottom: 1vh;
+    padding: 1.7vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    border: black 1px solid;
+    border-radius: 20%;
+    font-size: clamp(15px, 2vw, 25px);
+}
+
+.annees .couleur1 {
+    background-color: var(--couleur-formation1);
+}
+
+.annees .couleur2 {
+    background-color: var(--couleur-formation2);
+}
+
+.annees .couleur3 {
+    background-color: var(--couleur-formation3);
+}
+
+.annees .couleur4 {
+    background-color: var(--couleur-formation4);
+}
+
+.annees .couleur5 {
+    background-color: var(--couleur-formation5);
+}
+
+
 
 @media(min-width: 1275px) and (max-width: 1575px) {
     .test {
