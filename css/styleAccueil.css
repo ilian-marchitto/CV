@@ -10,7 +10,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: var(--couleur-principale);
-    padding: 2.5%;
+    padding: 4%;
     position: relative;
     box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
 }
@@ -27,7 +27,7 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(18px, 1.75vw, 20px);
+    font-size: clamp(15px, 1.75vw, 20px);
 }
 
 ul {
@@ -75,7 +75,6 @@ nav ul {
 
 nav ul a {
     display: flex;
-    gap: 20px;
     font-size: 16px;
     color: var(--couleur-texte);
     font-weight: bold;
@@ -114,6 +113,7 @@ main {
     align-items:flex-start;
     justify-content: center;
     height: 90vh;
+    gap:0px;
 }
 
 .courte-presentation {
@@ -143,7 +143,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
+    gap: 5vw;
 }
 
 .mon-cv, .me-contacter {
@@ -151,7 +151,7 @@ main {
     align-items: center;
     flex-direction: column;
     padding-top: 15px;
-    width: 40%;
+    width: 100%;
     border-radius: 5px;
     box-shadow: var(--ombres-section);
     background-color: var(--couleur-fond-section);
@@ -183,8 +183,8 @@ main {
 }
 
 .section-Accueil img{
-    width: 50%;
-    height: auto;
+    width: auto;
+    height: 50%;
 }
 
 @media(min-width: 1275px) and (max-width: 1575px) {
