@@ -10,12 +10,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: var(--couleur-principale);
-    padding: 4%;
+    padding: 6%;
     position: relative;
     box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
 }
 
 h1 {
+    white-space: nowrap;
     color: var(--couleur-text-bordeaux);
     font-size: clamp(20px, 2.5vw, 40px);
     flex-grow: 1;
@@ -23,10 +24,12 @@ h1 {
 }
 
 h2 {
+    white-space: nowrap;
     font-size: clamp(20px, 2vw, 30px);
 }
 
 h3 {
+    white-space: nowrap;
     font-size: clamp(15px, 1.75vw, 20px);
 }
 
