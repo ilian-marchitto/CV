@@ -204,7 +204,7 @@ main {
 .section-Formations h2 {
     position: relative;
     top: 5vh;
-    left: 10vw;
+    margin-left: 10vw;
 }
 
 .annees {
