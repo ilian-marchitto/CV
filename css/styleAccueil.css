@@ -197,7 +197,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5vh;
+    gap: 2.5vh;
     margin-top: 60px;
 }
 
@@ -212,15 +212,17 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2px
+    gap: 2px;
 }
 
 .annees h3 {
     font-weight: 800;
     font-size: clamp(15px, 2vw, 25px);
-    padding: 1vw;
-    padding-right: 8px;
-    padding-left: 8px;
+    padding: 1vw 8px;
+    text-align: center;
+    min-width: fit-content; 
+    max-width: 70vw;         
+    white-space: wrap;
 }
 
 .annees .sous-ligne {
