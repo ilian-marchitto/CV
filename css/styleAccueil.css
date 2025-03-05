@@ -4,6 +4,10 @@ body {
     padding: 0;
     background: #f8f8f8;
     color: var(--couleur-texte);
+    background-color: #f5ede1;
+    background-attachment: fixed;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23c4a77d' fill-opacity='0.42'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");  
+
 }
 
 nav, header{
@@ -26,6 +30,8 @@ h1 {
 
 h2 {
     white-space: nowrap;
+    margin-top: 10vh;
+    margin-left: 10vw;
     font-size: clamp(20px, 2vw, 30px);
 }
 
@@ -64,6 +70,13 @@ label {
     width: 30px;
     height: 4px;
     background: var(--couleur-text-bordeaux);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
 }
 
 nav ul {
@@ -107,8 +120,7 @@ nav ul li a i {
 }
 
 main {
-    background-color: #f5ede1;
-    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23c4a77d' fill-opacity='0.42'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");  
+    margin-top: 60px;
 }
 
 .section-Accueil {
@@ -116,7 +128,6 @@ main {
     flex-wrap: wrap;
     align-items:flex-start;
     justify-content: center;
-    height: 90vh;
     gap:0px;
 }
 
@@ -128,6 +139,10 @@ main {
     margin-top: 50px;
     padding: 4%;
     box-shadow: var(--ombres-section);
+}
+
+.courte-presentation h2 {
+    margin: 0;
 }
 
 .courte-presentation ul {
@@ -198,13 +213,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 2.5vh;
-    margin-top: 60px;
-}
-
-.section-Formations h2 {
-    position: relative;
-    top: 5vh;
-    margin-left: 10vw;
+    margin-top: 40px;
 }
 
 .annees {
@@ -218,10 +227,10 @@ main {
 .annees h3 {
     font-weight: 800;
     font-size: clamp(15px, 2vw, 25px);
-    padding: 1vw 8px;
+    padding: 5px 8px;
     text-align: center;
     min-width: fit-content; 
-    max-width: 70vw;         
+    max-width: 90vw;
     white-space: wrap;
 }
 
@@ -261,6 +270,28 @@ main {
     background-color: var(--couleur-formation5);
 }
 
+/* SECTION APTITUDES */
+
+.Aptitudes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    margin-top: 40px;
+    width: 85vw;
+    height: auto;
+} 
+
+.Comptences {
+    position: relative;
+    text-align: center;
+}
+.image {
+    width: 300px;
+    border-radius: 10px;
+}
 
 
 @media(min-width: 1275px) and (max-width: 1575px) {
