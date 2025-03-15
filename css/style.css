@@ -11,7 +11,8 @@
     --couleur-principale: #6B0D0D;
     --fond-page: #F5EDE1;
     --couleur-texte: #2E2E2E;
-    --details-icon: #C4A77D;
+    --nav-li-fond: #C4A77D;
+    --nav-li-fond-hover:#e9cda3;
     --couleur-text-bordeaux: #FFD8B7;
     --couleur-fond-section: #E0E0E0;
     --couleur-formation1: #A7C7E7;
@@ -33,11 +34,63 @@
     --gap-small: 13px;
 
 
-    --nav-pad-heigh: 40px;
-    --nav-li-pad: 10px;
+    --nav-pad-heigh: 30px;
+    --nav-li-pad: 6px;
 
     --nav-min-width: 200px;
     --ombres-section: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* BARRE NAVIGATION */
+h1 {
+    color: var(--couleur-text-bordeaux);
+    font-size: var(--h1);
+    white-space: nowrap;
+    position: absolute;
+    left: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    background-color: var(--couleur-principale);
+    list-style: none;
+    box-shadow: var(--ombres-section);
+    padding: var(--nav-pad-heigh) 1vw var(--nav-pad-heigh) 1vw;
+}
+
+nav ul {
+    display: flex;
+    gap: 0.5vw;
+}
+
+nav a {
+    font-weight: bold;
+    color: var(--couleur-texte);
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: var(--nav-li-fond-hover);
+    transform: scale(1.05);
+    border: black 1px solid;
+}
+
+nav li a{ 
+    background-color: var(--nav-li-fond);
+    padding: var(--nav-li-pad);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: var(--text-nav);
+    gap: 10px;
+    min-width: var(--nav-min-width);
+}
+
+nav i {
+    color: var(--couleur-texte);
 }
 
 @media(max-width: 1528px) {
@@ -45,6 +98,7 @@
         --text-nav: 20px;
         --nav-min-width: 165px;
         --h1: 30px;
+        --nav-pad-heigh: 25px;
     }   
 }
 
@@ -53,6 +107,7 @@
         --text-nav: 15px;
         --nav-min-width: 132px;
         --h1: 25px;
+        --nav-pad-heigh: 20px;
     }   
 }
 
@@ -118,7 +173,7 @@
     nav ul {
         position: absolute;
         left: -100%;
-        top: 109px;
+        top: 100%;
         display: flex;
         flex-direction: column;
         gap: 0px;
@@ -131,7 +186,7 @@
     }
 
     .ColorFoncee {
-        background-color: var(--details-icon);    
+        background-color: var(--nav-li-fond);    
     }
 
     .ColorClaire {

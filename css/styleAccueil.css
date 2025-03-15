@@ -14,52 +14,7 @@ body {
 }
 
 label {
-    display: none; /* Cache l’icône hamburger sur PC */
-}
-
-h1 {
-    color: var(--couleur-text-bordeaux);
-    font-size: var(--h1);
-    white-space: nowrap;
-    position: absolute;
-    left: 20px;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    position: fixed;
-    background-color: var(--couleur-principale);
-    list-style: none;
-    box-shadow: var(--ombres-section);
-    padding: var(--nav-pad-heigh) 1vw var(--nav-pad-heigh) 1vw;
-}
-
-nav ul {
-    display: flex;
-    gap: 0.5vw;
-}
-
-nav a {
-    font-weight: bold;
-    color: var(--couleur-texte);
-    text-decoration: none;
-}
-
-nav li a{ 
-    background-color: var(--details-icon);
-    padding: var(--nav-li-pad);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    font-size: var(--text-nav);
-    gap: 10px;
-    min-width: var(--nav-min-width);
-}
-
-nav i {
-    color: var(--couleur-text-bordeaux);
+    display: none;
 }
 
 
