@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--couleur-texte);
+    background-color: #f5ede1;
+    background-attachment: fixed;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23c4a77d' fill-opacity='0.42'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");  
+
+}
+
+#menu-toggle {
+    display: none;
+}
+
+label {
+    display: none; /* Cache l’icône hamburger sur PC */
+}
+
+h1 {
+    color: var(--couleur-text-bordeaux);
+    font-size: var(--h1);
+    white-space: nowrap;
+    position: absolute;
+    left: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    background-color: var(--couleur-principale);
+    list-style: none;
+    box-shadow: var(--ombres-section);
+    padding: var(--nav-pad-heigh) 1vw var(--nav-pad-heigh) 1vw;
+}
+
+nav ul {
+    display: flex;
+    gap: 0.5vw;
+}
+
+nav a {
+    font-weight: bold;
+    color: var(--couleur-texte);
+    text-decoration: none;
+}
+
+nav li a{ 
+    background-color: var(--details-icon);
+    padding: var(--nav-li-pad);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: var(--text-nav);
+    gap: 10px;
+    min-width: var(--nav-min-width);
+}
+
+nav i {
+    color: var(--couleur-text-bordeaux);
+}
+
+
+
+h2 {
+    white-space: nowrap;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    font-size: clamp(20px, 2vw, 30px);
+}
+
+h3 {
+    white-space: nowrap;
+    font-size: clamp(15px, 1.75vw, 20px);
+}
+
+ul {
+    list-style: none;
+}
