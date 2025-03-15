@@ -64,14 +64,13 @@
 
         /* Style de base du menu */
     .menu-icon {
-        position: absolute;
-        left: 30px;
         width: 30px;
         height: 25px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+        margin-left: clamp(10px, 1.5vw, 30px);
     }
 
     .menu-icon span {
@@ -108,10 +107,12 @@
     h1 {
         position: static;
         text-align: center;
+        margin: auto;
     }
 
     nav {
-        display: block;
+        display: flex;
+        justify-content: space-between;
     }
 
     nav ul {
@@ -138,5 +139,17 @@
     }
 }
 
+@media(max-width: 400px) {
+    :root {
+        --h1: 18px;
+    }
 
+    .menu-icon span {
+        display: block;
+        width: 80%;
+        height: 3px;
+        background-color: var(--couleur-text-bordeaux);
+        transition: 0.3s;
+    }
+}
 
