@@ -42,7 +42,7 @@ ul {
 .courte-presentation {
     background-color: var(--couleur-fond-section);
     margin-left: var(--section-margin-left);
-    padding: var(--section-padding) var(--section-padding) 0 var(--section-padding);
+    padding: var(--section-padding);
     box-shadow: var(--ombres-section);
 }
 
