@@ -33,11 +33,14 @@
     --gap-medium: 20px; 
     --gap-small: 13px;
 
-
     --nav-pad-heigh: 30px;
     --nav-li-pad: 6px;
-
     --nav-min-width: 200px;
+
+    --section-padding: 40px;
+    --section-margin-top: 180px;
+    --section-margin-left: 100px;
+
     --ombres-section: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -55,8 +58,8 @@ nav {
     justify-content: flex-end;
     width: 100%;
     position: fixed;
+    top:0;
     background-color: var(--couleur-principale);
-    list-style: none;
     box-shadow: var(--ombres-section);
     padding: var(--nav-pad-heigh) 1vw var(--nav-pad-heigh) 1vw;
 }
@@ -67,6 +70,7 @@ nav ul {
 }
 
 nav a {
+    display: inline-block;
     font-weight: bold;
     color: var(--couleur-texte);
     text-decoration: none;
@@ -75,7 +79,7 @@ nav a {
 nav a:hover{
     background-color: var(--nav-li-fond-hover);
     transform: scale(1.05);
-    border: black 1px solid;
+    transform-origin: center;
 }
 
 nav li a{ 
@@ -108,11 +112,16 @@ nav i {
         --nav-min-width: 132px;
         --h1: 25px;
         --nav-pad-heigh: 20px;
+        --section-margin-top: 140px;
     }   
 }
 
 @media(max-width: 1010px) {
 
+    :root {
+        --section-margin-left: 0px;
+        --section-padding: 25px;
+    }
     label {
         display: block;
     }
@@ -192,11 +201,32 @@ nav i {
     .ColorClaire {
         background-color: var(--couleur-text-bordeaux);
     }
+
+    /* SECTION ACCUEIL */
+    .section-Accueil {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:0px;
+    }
+
+    .section-Accueil img{
+        margin: auto;
+        width: 300px;
+        height: 0%;
+    }
+
+    .courte-presentation {
+        margin: 15px
+    };
 }
 
 @media(max-width: 400px) {
     :root {
         --h1: 18px;
+        --section-padding: 15px;
     }
 
     .menu-icon span {

@@ -17,8 +17,6 @@ label {
     display: none;
 }
 
-
-
 h2 {
     white-space: nowrap;
     margin-top: 10vh;
@@ -28,9 +26,82 @@ h2 {
 
 h3 {
     white-space: nowrap;
-    font-size: clamp(15px, 1.75vw, 20px);
+    font-size: clamp(15px, 1.75vw, 30px);
 }
 
 ul {
     list-style: none;
+}
+
+.section-Accueil {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: var(--section-margin-top);
+}
+
+.courte-presentation {
+    background-color: var(--couleur-fond-section);
+    margin-left: var(--section-margin-left);
+    padding: var(--section-padding) var(--section-padding) 0 var(--section-padding);
+    box-shadow: var(--ombres-section);
+}
+
+.courte-presentation h2 {
+    margin: 0;
+}
+
+.courte-presentation ul {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.courte-presentation ul li {
+    font-size: clamp(14px, 1.5vw, 30px);
+}
+
+.container-cv-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.mon-cv, .me-contacter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: var(--ombres-section);
+}
+
+.mon-cv h3, .me-contacter h3 {
+    position: relative;
+    top: 0;
+    border: 2px solid var(--couleur-texte);
+    padding: 10px;
+}
+
+.mon-cv ul, .me-contacter ul{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+.mon-cv i, .me-contacter i {
+    color: black;
+    font-size: 40px;
+}
+
+.mon-cv i {
+    color: #D3202A;
+}
+
+.section-Accueil img{
+    margin: auto;
+    width: 34vw;
 }
