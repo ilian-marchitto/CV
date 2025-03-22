@@ -134,6 +134,7 @@ ul {
     width: 40%;
     padding: 10px;
     border-radius: 5px;
+    gap: var(--schema-liste-gap);
     background-color: rgba(240, 255, 255, 0.8);
 }
 
