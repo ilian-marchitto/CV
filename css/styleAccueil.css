@@ -6,7 +6,8 @@ body {
     background-color: #f5ede1;
     background-attachment: fixed;
     background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23c4a77d' fill-opacity='0.42'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");  
-
+    height: 100%;
+    scroll-behavior: smooth;
 }
 
 #menu-toggle {
@@ -19,7 +20,6 @@ label {
 
 h2 {
     white-space: nowrap;
-    margin-top: 10vh;
     margin-left: 10vw;
     font-size: clamp(20px, 2vw, 30px);
 }
@@ -32,6 +32,8 @@ h3 {
 ul {
     list-style: none;
 }
+
+/* SECTION ACCUEIL */
 
 .section-Accueil {
     display: flex;
@@ -68,6 +70,7 @@ ul {
     gap: 5vw;
 }
 
+
 .mon-cv, .me-contacter {
     display: flex;
     align-items: center;
@@ -78,6 +81,9 @@ ul {
     box-shadow: var(--ombres-section);
 }
 
+.mon-cv:hover, .me-contacter:hover{
+    transform: scale(1.05);
+}
 .mon-cv h3, .me-contacter h3 {
     position: relative;
     top: 0;
@@ -104,4 +110,76 @@ ul {
 .section-Accueil img{
     margin: auto;
     width: 34vw;
+}
+
+/* SECTION FORMATION */
+
+.section-Formations {
+    margin-top: var(--section-margin-top);
+}
+
+.Schema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--schema-gap);
+    margin-top: var(--schema-margin-top);
+}
+
+.annees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 10px;*border-radius: 5px;
+    background-color: rgba(240, 255, 255, 0.8);
+}
+
+.annees:hover {
+    transform: scale(1.1);
+}
+
+.annees h3 {
+    font-weight: 800; /* Pour mettre en gras */
+    font-size: clamp(15px, 2vw, 25px);
+    padding: 0 10px 0 10px;
+    text-align: center;
+    min-width: fit-content; 
+    white-space: wrap;
+}
+
+.annees .sous-ligne {
+    font-size: clamp(10px, 1vw, 20px);
+    background-color:rgb(228, 228, 228);
+    text-align: center;
+    padding: 2.5px;
+}
+
+.annees .annee {
+    margin-bottom: 10px;
+    padding: 13px 25px 13px 25px;
+    border: black 1px solid;
+    border-radius: 20%;
+    font-size: clamp(15px, 2vw, 25px);
+}
+
+.annees .couleur1 {
+    background-color: var(--couleur-formation1);
+}
+
+.annees .couleur2 {
+    background-color: var(--couleur-formation2);
+}
+
+.annees .couleur3 {
+    background-color: var(--couleur-formation3);
+}
+
+.annees .couleur4 {
+    background-color: var(--couleur-formation4);
+}
+
+.annees .couleur5 {
+    background-color: var(--couleur-formation5);
 }
