@@ -30,8 +30,6 @@
     --text-p: 10px;
 
     --gap-nav: 50px;
-    --gap-medium: 20px; 
-    --gap-small: 13px;
 
     --nav-pad-heigh: 30px;
     --nav-li-pad: 6px;
@@ -46,6 +44,7 @@
     --schema-margin-top: 70px;
     --schema-gap: 50px;
     --schema-liste-gap:4px;
+    --formations-h2-margin:120px;
 
     --ombres-section: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }

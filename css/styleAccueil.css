@@ -21,7 +21,7 @@ label {
 h2 {
     white-space: nowrap;
     margin-left: 10vw;
-    font-size: clamp(20px, 2vw, 30px);
+    font-size: clamp(20px, 2.5vw, 40px);
 }
 
 h3 {
@@ -35,10 +35,14 @@ ul {
 
 /* SECTION ACCUEIL */
 
+.accueil-container{
+    height: 100vh;
+}
+
 .section-Accueil {
     display: flex;
     flex-wrap: nowrap;
-    margin-top: var(--section-margin-top);
+    padding-top: var(--section-margin-top);
 }
 
 .courte-presentation {
@@ -113,9 +117,13 @@ ul {
 }
 
 /* SECTION FORMATION */
-
 .section-Formations {
-    margin-top: var(--section-margin-top);
+    background-color: #300609;
+}
+
+.section-Formations h2 {
+    padding-top: var(--formations-h2-margin);
+    color:white
 }
 
 .Schema {
@@ -127,6 +135,8 @@ ul {
 }
 
 .annees {
+    position: relative;
+    transition: transform 0.2s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,6 +146,21 @@ ul {
     border-radius: 5px;
     gap: var(--schema-liste-gap);
     background-color: rgba(240, 255, 255, 0.8);
+}
+
+.annees::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: var(--schema-gap);
+    background: rgb(0, 0, 0, 0.8);
+    left: 50%; 
+    top: 100%; /* Place le trait SOUS l'élément */
+    transform: translateX(-50%);
+}
+
+.annees:last-child::after {
+    display: none;
 }
 
 .annees:hover {
