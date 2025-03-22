@@ -227,7 +227,12 @@ nav i {
 
     .courte-presentation {
         margin: 15px
-    };
+    }
+
+    /* Section Formations */
+    .annees {
+        width: 60%;
+    }
 }
 
 @media(max-width: 400px) {
@@ -242,6 +247,11 @@ nav i {
         height: 3px;
         background-color: var(--couleur-text-bordeaux);
         transition: 0.3s;
+    }
+    
+    /*SECTION FORMATIONS */
+    .annees {
+        width: 80%;
     }
 }
 
