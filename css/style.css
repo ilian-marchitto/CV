@@ -10,7 +10,7 @@
 :root {
     --couleur-principale: #6B0D0D;
     --fond-page: #F5EDE1;
-    --couleur-texte: #2E2E2E;
+    --couleur-texte: #1d1d1d;
     --nav-li-fond: #C4A77D;
     --nav-li-fond-hover:#e9cda3;
     --couleur-text-bordeaux: #FFD8B7;
@@ -39,12 +39,16 @@
     --section-margin-top: 180px;
     --section-margin-left: 100px;
 
-    /* Variable Schéma Formations */
+    /* Variable Schéma Formations */ 
+    --couleur-fond-formations: #5e0c11;
     --formations-gap: 2px;
     --schema-margin-top: 70px;
     --schema-gap: 50px;
     --schema-liste-gap:4px;
-    --formations-h2-margin:120px;
+    --h2-margin:120px;
+
+    /* Variable Aptitudes */
+    --couleur-fond-aptitudes: #e9cda3  ;
 
     --ombres-section: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -109,6 +113,8 @@ nav i {
         --nav-min-width: 165px;
         --h1: 30px;
         --nav-pad-heigh: 25px;
+        --h2-margin:100px;
+        --schema-margin-top: 60px;
     }
 
     .accueil-container{
@@ -124,6 +130,8 @@ nav i {
         --h1: 25px;
         --nav-pad-heigh: 20px;
         --section-margin-top: 140px;
+        --h2-margin:85px;
+        --schema-margin-top: 50px;
     }   
 }
 
@@ -133,6 +141,8 @@ nav i {
         --section-margin-top: 105px;
         --section-margin-left: 0px;
         --section-padding: 25px;
+        --h2-margin:120px;
+        --schema-margin-top: 40px;
     }
     label {
         display: block;
@@ -244,6 +254,7 @@ nav i {
     :root {
         --h1: 18px;
         --section-padding: 15px;
+        --h2-margin:50px;
     }
 
     .menu-icon span {

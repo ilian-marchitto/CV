@@ -22,6 +22,7 @@ h2 {
     white-space: nowrap;
     margin-left: 10vw;
     font-size: clamp(20px, 2.5vw, 40px);
+    padding-top: var(--h2-margin);
 }
 
 h3 {
@@ -54,6 +55,7 @@ ul {
 
 .courte-presentation h2 {
     margin: 0;
+    padding: 0;
 }
 
 .courte-presentation ul {
@@ -118,11 +120,11 @@ ul {
 
 /* SECTION FORMATION */
 .section-Formations {
-    background-color: #300609;
+    background: linear-gradient(to bottom, var(--couleur-principale), var(--couleur-fond-formations));
+    padding-bottom: var(--h2-margin);
 }
 
 .section-Formations h2 {
-    padding-top: var(--formations-h2-margin);
     color:white
 }
 
@@ -209,4 +211,29 @@ ul {
 
 .annees .couleur5 {
     background-color: var(--couleur-formation5);
+}
+
+/* SECTION APTITUDES */
+.container-aptitudes {
+    background-color: var(--couleur-fond-aptitudes);
+}
+
+.Aptitudes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 40%;
+    height: auto;
+} 
+
+.Comptences {
+    position: relative;
+    text-align: center;
+}
+.image {
+    width: 300px;
+    border-radius: 10px;
 }
