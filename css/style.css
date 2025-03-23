@@ -50,6 +50,12 @@
     /* Variable Aptitudes */
     --couleur-fond-aptitudes: #e9cda3  ;
 
+    /* Variable Competences */
+    --size-etoiles: 40px;
+    --couleur-etoiles: #FFD700;
+    --couleur-contour-etoiles: #b19600;
+    --comptences-h3-pad: 50px;
+    --competences-size-image: 80px;
     --ombres-section: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -115,6 +121,9 @@ nav i {
         --nav-pad-heigh: 25px;
         --h2-margin:100px;
         --schema-margin-top: 60px;
+        --comptences-h3-pad: 40px;
+        --size-etoiles: 30px;
+        --competences-size-image: 60px;
     }
 
     .accueil-container{
@@ -132,6 +141,9 @@ nav i {
         --section-margin-top: 140px;
         --h2-margin:85px;
         --schema-margin-top: 50px;
+        --comptences-h3-pad: 25px;
+        --size-etoiles: 25px;
+        --competences-size-image: 55px;
     }   
 }
 
@@ -143,6 +155,9 @@ nav i {
         --section-padding: 25px;
         --h2-margin:120px;
         --schema-margin-top: 40px;
+        --comptences-h3-pad: 20px;
+        --size-etoiles: 20px;
+        --competences-size-image: 50px;
     }
     label {
         display: block;
@@ -255,6 +270,8 @@ nav i {
         --h1: 18px;
         --section-padding: 15px;
         --h2-margin:50px;
+        --comptences-h3-pad: 15px;
+        --competences-size-image: 35px;
     }
 
     .menu-icon span {
