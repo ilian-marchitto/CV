@@ -109,7 +109,12 @@ nav i {
         --nav-min-width: 165px;
         --h1: 30px;
         --nav-pad-heigh: 25px;
-    }   
+    }
+
+    .accueil-container{
+        height: auto;
+    }
+    
 }
 
 @media(max-width: 1240px) {
